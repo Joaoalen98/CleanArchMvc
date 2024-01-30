@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{00A3248A-F84E-49BE-B7E1-F25B131F5768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{00A3248A-F84E-49BE-B7E1-F25B131F5768}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{AE988874-C160-4BAA-B5A4-6203D58013C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{AE988874-C160-4BAA-B5A4-6203D58013C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.IoC", "CleanArch.IoC\CleanArch.IoC.csproj", "{582D264A-5BDE-4425-B0DC-D0C31B00B147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.WebUI", "CleanArch.WebUI\CleanArch.WebUI.csproj", "{A186B606-A04D-43B1-8AFF-E56255C1ADC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.WebUI", "CleanArch.WebUI\CleanArch.WebUI.csproj", "{A186B606-A04D-43B1-8AFF-E56255C1ADC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.IoC", "CleanArch.Infra.IoC\CleanArch.Infra.IoC.csproj", "{AF7DC3D3-719B-425B-8460-F3F8C2232615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain.Tests", "CleanArch.Domain.Tests\CleanArch.Domain.Tests.csproj", "{DEFF111B-191F-4FC7-8FFA-79A939ACF97B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +27,18 @@ Global
 		{AE988874-C160-4BAA-B5A4-6203D58013C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE988874-C160-4BAA-B5A4-6203D58013C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE988874-C160-4BAA-B5A4-6203D58013C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{582D264A-5BDE-4425-B0DC-D0C31B00B147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{582D264A-5BDE-4425-B0DC-D0C31B00B147}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{582D264A-5BDE-4425-B0DC-D0C31B00B147}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{582D264A-5BDE-4425-B0DC-D0C31B00B147}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A186B606-A04D-43B1-8AFF-E56255C1ADC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A186B606-A04D-43B1-8AFF-E56255C1ADC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A186B606-A04D-43B1-8AFF-E56255C1ADC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A186B606-A04D-43B1-8AFF-E56255C1ADC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7DC3D3-719B-425B-8460-F3F8C2232615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7DC3D3-719B-425B-8460-F3F8C2232615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7DC3D3-719B-425B-8460-F3F8C2232615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7DC3D3-719B-425B-8460-F3F8C2232615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFF111B-191F-4FC7-8FFA-79A939ACF97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFF111B-191F-4FC7-8FFA-79A939ACF97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFF111B-191F-4FC7-8FFA-79A939ACF97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFF111B-191F-4FC7-8FFA-79A939ACF97B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

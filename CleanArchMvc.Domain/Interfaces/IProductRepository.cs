@@ -1,6 +1,6 @@
-﻿using CleanArch.Domain.Entities;
+﻿using CleanArchMvc.Domain.Entities;
 
-namespace CleanArch.Domain.Interfaces
+namespace CleanArchMvc.Domain.Interfaces
 {
     public interface IProductRepository
     {

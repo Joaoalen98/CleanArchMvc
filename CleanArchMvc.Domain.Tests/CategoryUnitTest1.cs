@@ -1,7 +1,8 @@
-using CleanArch.Domain.Entities;
+using CleanArchMvc.Domain.Entities;
+using CleanArchMvc.Domain.Validation;
 using FluentAssertions;
 
-namespace CleanArch.Domain.Tests
+namespace CleanArchMvc.Domain.Tests
 {
     public class CategoryUnitTest1
     {
@@ -10,7 +11,7 @@ namespace CleanArch.Domain.Tests
         {
             Action action = () => new Category(1, "Category Name");
             action.Should()
-                .NotThrow<Validation.DomainExceptionValidation>();
+                .NotThrow<DomainExceptionValidation>();
         }
 
         [Fact(DisplayName = "Try to create  a category with a negative id value")]
@@ -18,7 +19,7 @@ namespace CleanArch.Domain.Tests
         {
             Action action = () => new Category(-1, "Category Name");
             action.Should()
-                .Throw<Validation.DomainExceptionValidation>()
+                .Throw<DomainExceptionValidation>()
                 .WithMessage("Invalid Id value.");
         }
 
@@ -27,7 +28,7 @@ namespace CleanArch.Domain.Tests
         {
             Action action = () => new Category(1, null);
             action.Should()
-                .Throw<Validation.DomainExceptionValidation>()
+                .Throw<DomainExceptionValidation>()
                 .WithMessage("Name is required.");
         }
 
@@ -36,7 +37,7 @@ namespace CleanArch.Domain.Tests
         {
             Action action = () => new Category(1, "Ca");
             action.Should()
-                .Throw<Validation.DomainExceptionValidation>()
+                .Throw<DomainExceptionValidation>()
                 .WithMessage("Name is too short, minimum 3 characters.");
         }
     }

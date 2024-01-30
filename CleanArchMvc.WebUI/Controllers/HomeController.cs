@@ -1,8 +1,8 @@
-using CleanArch.WebUI.Models;
+using CleanArchMvc.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CleanArch.WebUI.Controllers
+namespace CleanArchMvc.WebUI.Controllers
 {
     public class HomeController : Controller
     {

@@ -15,7 +15,7 @@ namespace CleanArchMvc.Domain.Tests
         }
 
         [Fact(DisplayName = "Try to create  a category with a negative id value")]
-        public void CreateCategory_NegativeIdValue_ResultObjectValidState()
+        public void CreateCategory_NegativeIdValue_DomainExceptionInvalidId()
         {
             Action action = () => new Category(-1, "Category Name");
             action.Should()
@@ -24,7 +24,7 @@ namespace CleanArchMvc.Domain.Tests
         }
 
         [Fact(DisplayName = "Try to create a category with null name")]
-        public void CreateCategory_WithNullname_ResultObjectValidState()
+        public void CreateCategory_WithNullname_DomainExceptionInvalidName()
         {
             Action action = () => new Category(1, null);
             action.Should()
@@ -33,7 +33,7 @@ namespace CleanArchMvc.Domain.Tests
         }
 
         [Fact(DisplayName = "Try to create a category with short name")]
-        public void CreateCategory_WithShortName_ResultObjectValidState()
+        public void CreateCategory_WithShortName_DomainExceptionShortName()
         {
             Action action = () => new Category(1, "Ca");
             action.Should()

@@ -33,10 +33,17 @@ namespace CleanArchMvc.Infra.IoC
                 var configuration = new MapperConfiguration(mcfg =>
                 {
                     mcfg.AddProfile<DomainToDTOMappingProfile>();
+                    mcfg.AddProfile<DTOToCommandMappingProfile>();
                 });
 
                 var mapper = new Mapper(configuration);
                 return mapper;
+            });
+
+            var handlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
+            services.AddMediatR(cfg =>
+            {
+                cfg.RegisterServicesFromAssembly(handlers);
             });
 
             return services;
